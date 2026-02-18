@@ -2,8 +2,6 @@ import Book from "./ui/Book";
 import { books } from "../data";
 
 function Featured() {
-  console.log(books);
-  console.log();
   return (
     <section id="featured">
       <div className="container">

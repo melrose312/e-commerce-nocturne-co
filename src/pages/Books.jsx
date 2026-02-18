@@ -1,7 +1,36 @@
+import { useState } from "react";
 import Book from "../components/ui/Book";
-import { books } from "../data";
 
-function Books() {
+function Books({ books: initialBooks }) {
+  const [books, setBooks] = useState(initialBooks);
+
+  function filterBooks(filter) {
+    if (filter === "LOW_TO_HIGH") {
+      setBooks(
+        books
+          .slice()
+          .sort(
+            (a, b) =>
+              (a.salePrice || a.originalPrice) -
+              (b.salePrice || b.originalPrice),
+          ),
+      );
+    }
+    if (filter === "HIGH_TO_LOW") {
+      setBooks(
+        books
+          .slice()
+          .sort(
+            (a, b) =>
+              (b.salePrice || b.originalPrice) -
+              (a.salePrice || a.originalPrice),
+          ),
+      );
+    }
+    if (filter === "RATING") {
+      setBooks(books.slice().sort((a, b) => b.rating - a.rating));
+    }
+  }
   return (
     <div id="books__body">
       <main id="books__main">
@@ -12,8 +41,12 @@ function Books() {
                 <h2 className="section__title books__header--title">
                   All Books
                 </h2>
-                <select id="filter">
-                  <option value="" selected disabled>
+                <select
+                  id="filter"
+                  defaultValue=""
+                  onChange={(event) => filterBooks(event.target.value)}
+                >
+                  <option value="" disabled>
                     Sort
                   </option>
                   <option value="LOW_TO_HIGH">Price: Low to High</option>
