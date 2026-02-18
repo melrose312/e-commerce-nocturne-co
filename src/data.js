@@ -11,6 +11,9 @@ import birdBox from "./assets/bird-box.jpg";
 import mary from "./assets/mary.jpg";
 import ringShout from "./assets/ring-shout.jpg";
 import slewFoot from "./assets/slewfoot.jpg";
+import hpLovecraftFiction from "./assets/hp-lovecraft-fiction.jpg";
+import intercepts from "./assets/intercepts.jpg";
+import lastDays from "./assets/last-days.jpg";
 
 // FAKE DATA
 export const books = [
@@ -117,5 +120,29 @@ export const books = [
     originalPrice: 22.00,
     salePrice: null,
     rating: 5,
+  },
+  {
+    id: 14,
+    title: "The Complete Fiction of H.P Lovecraft",
+    url: hpLovecraftFiction,
+    originalPrice: 14.99,
+    salePrice: null,
+    rating: 4.5,
+  },
+  {
+    id: 15,
+    title: "Intercepts",
+    url: intercepts,
+    originalPrice: 13.99,
+    salePrice: 9.99,
+    rating: 4.5,
+  },
+  {
+    id: 16,
+    title: "Last Days",
+    url: lastDays,
+    originalPrice: 20.99,
+    salePrice: null,
+    rating: 4,
   },
 ];

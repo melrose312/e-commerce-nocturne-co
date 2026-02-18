@@ -1,5 +1,5 @@
 import { books } from "../data";
-import Book from "../ui/Book";
+import Book from "./ui/Book";
 
 function Discounted() {
   return (
