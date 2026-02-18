@@ -431,6 +431,13 @@ FEATURED
   border-radius: 4px;
   overflow: hidden;
   display: flex;
+  height: 420px;
+}
+
+.book__img--wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .book__title {
@@ -439,7 +446,7 @@ FEATURED
 }
 
 .book__title--link {
-  color: #242424;
+  color: white;
 }
 
 .book__ratings {
@@ -447,10 +454,32 @@ FEATURED
   color: #fabf2a;
 }
 
+.book__price {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  font-size: 16px;
+}
+
 .book__price--normal {
   text-decoration: line-through;
-  padding-right: 6px;
   color: #bfbfbf;
+}
+
+.book__price--sale {
+  color: white;
+  font-weight: 500;
+}
+
+/* 
+
+DISCOUNTED
+
+*/
+
+#recent {
+  background-color: #0a0a0a;
 }
 
 /* 
@@ -460,7 +489,7 @@ EXPLORE
 */
 
 #explore {
-  background-color: rgba(115, 66, 214, 0.1);
+  background-color: #0a0a0a;
 }
 
 /* 
@@ -479,7 +508,6 @@ footer {
 
 .footer__logo--img {
   width: 160px;
-  filter: grayscale(1) invert(1);
 }
 
 .footer__link,

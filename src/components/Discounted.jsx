@@ -1,20 +1,18 @@
-import Book from "../ui/Book";
 import { books } from "../data";
+import Book from "../ui/Book";
 
-function Featured() {
-  console.log(books);
-  console.log();
+function Discounted() {
   return (
-    <section id="featured">
+    <section id="recent">
       <div className="container">
         <div className="row">
-          <h2 className="setion__title">
-            Featured <span className="red">Books</span>
+          <h2 className="section__title">
+            Discounted <span className="red">Books</span>
           </h2>
           <div className="books">
             {books
-              .filter((book) => book.rating === 5)
-              .slice(0, 4)
+              .filter((book) => book.salePrice > 0)
+              .slice(0, 8)
               .map((book) => (
                 <Book book={book} key={book.id} />
               ))}
@@ -25,4 +23,4 @@ function Featured() {
   );
 }
 
-export default Featured;
+export default Discounted;

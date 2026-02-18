@@ -1,25 +1,39 @@
+import dracula from "./assets/dracula.jpg";
+import thisThingBetweenUs from "./assets/this-thing-between-us.jpg";
+import hauntingHillHouse from "./assets/haunting-hill-house.jpg";
+import penpal from "./assets/penpal.jpg";
+import petSematary from "./assets/pet-sematary.jpg";
+import seed from "./assets/seed.jpg";
+import stolenTongues from "./assets/stolen-tongues.jpg";
+import incidentsAroundTheHouse from "./assets/incidents-around-the-house.jpg";
+import travisWalton from "./assets/travis-walton.jpg";
+import birdBox from "./assets/bird-box.jpg";
+import mary from "./assets/mary.jpg";
+import ringShout from "./assets/ring-shout.jpg";
+import slewFoot from "./assets/slewfoot.jpg";
+
 // FAKE DATA
 export const books = [
   {
     id: 1,
     title: "Dracula",
-    url: "assets/dracula.jpg",
+    url: dracula,
     originalPrice: 20.00,
     salePrice: 11.99,
-    rating: 4.5,
+    rating: 4,
   },
   {
     id: 2,
     title: "This Thing Between Us",
-    url: "assets/this-thing-between-us.jpg",
+    url: thisThingBetweenUs,
     originalPrice: 10.99,
     salePrice: null,
-    rating: 4,
+    rating: 5,
   },
   {
     id: 3,
     title: "The Haunting of Hill House",
-    url: "assets/haunting-hill-house.jpg",
+    url: hauntingHillHouse,
     originalPrice: 26.99,
     salePrice: 15.99,
     rating: 3.5,
@@ -27,15 +41,15 @@ export const books = [
   {
     id: 4,
     title: "PenPal",
-    url: "assets/penpal.jpg",
+    url: penpal,
     originalPrice: 12.99,
     salePrice: 8.99,
-    rating: 4.8,
+    rating: 4.5,
   },
   {
     id: 5,
     title: "Pet Sematary",
-    url: "assets/pet-sematary.jpg",
+    url: petSematary,
     originalPrice: 27.99,
     salePrice: 16.99,
     rating: 4.5,
@@ -43,23 +57,23 @@ export const books = [
   {
     id: 6,
     title: "Seed",
-    url: "assets/seed.jpg",
+    url: seed,
     originalPrice: 14.95,
     salePrice: 9.95,
-    rating: 5,
+    rating: 4,
   },
   {
     id: 7,
     title: "Stolen Tongues",
-    url: "assets/stolen-tongues.jpg",
+    url: stolenTongues,
     originalPrice: 19.99,
     salePrice: null,
-    rating: 4,
+    rating: 5,
   },
   {
     id: 8,
     title: "Incidents Around the House",
-    url: "assets/incidents-around-the-house.jpg",
+    url: incidentsAroundTheHouse,
     originalPrice: 20.00,
     salePrice: 18.49,
     rating: 4.5,
@@ -67,7 +81,7 @@ export const books = [
   {
     id: 9,
     title: "Fire In The Sky",
-    url: "assets/travis-walton.jpg",
+    url: travisWalton,
     originalPrice: 16.99,
     salePrice: null,
     rating: 3.5,
@@ -75,7 +89,7 @@ export const books = [
   {
     id: 10,
     title: "Bird Box",
-    url: "assets/bird-box.jpg",
+    url: birdBox,
     originalPrice: 25.99,
     salePrice: 14.95,
     rating: 4,
@@ -83,7 +97,7 @@ export const books = [
   {
     id: 11,
     title: "Mary: A Novel",
-    url: "assets/mary.jpg",
+    url: mary,
     originalPrice: 16.99,
     salePrice: null,
     rating: 5,
@@ -91,9 +105,17 @@ export const books = [
   {
     id: 12,
     title: "Ring Shout",
-    url: "assets/ring-shout.jpg",
+    url: ringShout,
     originalPrice: 19.99,
     salePrice: 13.99,
     rating: 4.5,
+  },
+  {
+    id: 13,
+    title: "Slewfoot",
+    url: slewFoot,
+    originalPrice: 22.00,
+    salePrice: null,
+    rating: 5,
   },
 ];
