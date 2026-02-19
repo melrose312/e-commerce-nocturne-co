@@ -398,18 +398,19 @@ FEATURED
   width: 100%;
   max-width: 250px;
   height: 320px;
-  background-color: rgb(204, 204, 204);
+  background-color: #1e1e1e;
   margin-bottom: 8px;
 }
 
 .skeleton {
-  background-color: rgb(227, 227, 227) !important;
+  background-color: #1e1e1e !important;
   margin-bottom: 8px;
 }
 
 .book__title--skeleton {
   height: 21px;
   width: 100%;
+  max-width: 250px;
 }
 
 .book__rating--skeleton {
@@ -428,10 +429,10 @@ FEATURED
 
 .book__img--wrapper {
   margin-bottom: 8px;
-  border-radius: 4px;
+  border-radius: 8px;
   overflow: hidden;
   display: flex;
-  height: 420px;
+  height: auto;
 }
 
 .book__img--wrapper img {
@@ -447,6 +448,7 @@ FEATURED
 
 .book__title--link {
   color: white;
+  text-decoration: none;
 }
 
 .book__ratings {
