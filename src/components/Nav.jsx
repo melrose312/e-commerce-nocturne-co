@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import NavLogo from "../assets/nocturne-logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-function Nav() {
+function Nav( {numberOfItems} ) {
   function openMenu() {
     document.body.classList += " menu--open";
   }
@@ -34,7 +34,9 @@ function Nav() {
             <Link to="/cart" className="nav__link">
               <FontAwesomeIcon icon="shopping-cart" />
             </Link>
-            <span className="cart__length">2</span>
+            {
+              numberOfItems > 0 && <span className="cart__length">{numberOfItems}</span>
+            }
           </li>
         </ul>
         <div className="menu__backdrop">
