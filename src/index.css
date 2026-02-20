@@ -382,6 +382,9 @@ FEATURED
   width: 25%;
   padding: 24px;
   transition: all 300ms ease;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .book:hover {
