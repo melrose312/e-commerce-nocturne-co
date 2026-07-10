@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import HeaderImg from "../assets/cat-coffee-book.png"
 
 function Landing() {
@@ -11,9 +10,9 @@ function Landing() {
             <h2>
               Find your next <span className="red">Haunting</span> Read
             </h2>
-            <Link to ="#features">
+            <a href="#featured">
                 <button className="btn">Browse books</button>
-            </Link>
+            </a>
           </div>
           <figure className="header__img--wrapper">
             <img src={ HeaderImg } alt="" />
