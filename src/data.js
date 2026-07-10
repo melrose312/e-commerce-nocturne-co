@@ -103,7 +103,7 @@ export const books = [
     url: travisWalton,
     originalPrice: 16.99,
     salePrice: null,
-    rating: 3.5,
+    rating: 3,
     description:
       "On 11/5/1975 a group of loggers in the mountains of northeastern Arizona observed a strange, unusually bright light in the sky. One of them, Travis Walton, recklessly left the safety of their truck to take a closer look. Suddenly, as he walked toward the light, Walton was blasted back by a bolt of mysterious energy. His companions fled in fear. When they reported an encounter with a UFO--something they would have considered impossible if they had not witnessed it themselves--the men were suspected of murder. For five days authorities mounted a massive manhunt in search of Walton or his body. Then Walton reappeared, disoriented & initially unable to tell the whole story of his terrifying encounter. In Fire in the Sky Travis Walton relates in his own words the best documented account of alien abduction yet recorded, the story of his harrowing ordeal at the hands of silent captors & his return to a disbelieving world of hostile interrogators, exploitative press & self-styled debunkers. Travis recounts the struggle to get a fair hearing & confronts his detractors with a stinging rebuttal.",
   },

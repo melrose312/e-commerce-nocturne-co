@@ -23,7 +23,7 @@ function Book({ book }) {
     return () => {
       mountedRef.current = false;
     }
-  }, []);
+  }, [book.url]);
 
   return (
     <div className="book">
@@ -31,7 +31,7 @@ function Book({ book }) {
         <>
           <Link to={`/books/${book.id}`}>
             <figure className="book__img--wrapper">
-              <img src={book.url} className="book__img" />
+              <img src={book.url} className="book__img" alt={book.title} />
             </figure>
           </Link>
           <div className="book__title">
